@@ -5,7 +5,7 @@ Menu system for DM Tool access
 from dmTools import *
 
 # Edit this array to add more menu items. The format is (function, function description)
-toolArr = [[enemy_init,"Enemy Initiative"], [roll_stats, "Roll Enemy Stats"]]
+toolArr = [[enemy_init,"Enemy Initiative"], [None, "Roll Enemy Stats"]]
 
 while True:
     print("List of tools:")
