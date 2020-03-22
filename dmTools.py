@@ -21,6 +21,7 @@ def enemy_init():
     eArr.sort()
     for i in range(eNum):
         eArr.append(randint(1,20))
+    eArr.sort()
     for i in range(len(eArr)):
         print("Enemy {}: {}".format(i+1, eArr[i]))
 
