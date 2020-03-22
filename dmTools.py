@@ -23,4 +23,6 @@ def enemy_init():
     for i in range(len(eArr)):
         print("Enemy {}: {}".format(i+1, eArr[i]))
 
+def roll_stats():
+    return
 # More functions can be added, just be sure to add them to the array in the menu if you use them with dmMain.py
