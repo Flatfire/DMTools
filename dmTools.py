@@ -18,6 +18,7 @@ def enemy_init():
         except:
             print("Please enter a valid integer")
     eArr = []
+    eArr.sort()
     for i in range(eNum):
         eArr.append(randint(1,20))
     for i in range(len(eArr)):
