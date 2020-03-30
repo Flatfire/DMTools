@@ -18,11 +18,16 @@ def enemy_init():
         except:
             print("Please enter a valid integer")
     eArr = []
-    eArr.sort()
     for i in range(eNum):
         eArr.append(randint(1,20))
     eArr.sort()
     for i in range(len(eArr)):
         print("Enemy {}: {}".format(i+1, eArr[i]))
 
+
+
+def diceRoller(dice):
+    """Rolls a dice of your choosing"""
+    roll = randint(1,dice)
+    return roll
 # More functions can be added, just be sure to add them to the array in the menu if you use them with dmMain.py
