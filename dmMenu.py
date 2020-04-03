@@ -22,8 +22,13 @@ def dmMenu(toolArr):
             print()
             try:
                 toolChoice = int(toolChoice)
-                toolArr[toolChoice-1][0]()
+                if len(toolArr[toolChoice-1]) == 3:
+                    args = toolArr[toolChoice-1][2]
+                    toolArr[toolChoice-1][0](*args)
+                else:
+                    toolArr[toolChoice-1][0]()
                 print()
+                #TODO Drop back to start properly
                 input("Press 'Enter' to return to the menu.")
             except:
                 print("Tool not found")
